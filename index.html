@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Raihan Syabana</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header Content -->
+    <header class="main-header p-[8px]">
+        <!-- Logo Icon -->
+        <div class="logo rounded-[50%] h-[50px] w-[50px]"></div>
+
+        <!-- Navigation Menu -->
+        <div class="menu-wrap">
+        <nav class="menu-nav">
+            <a class="menu-item border rounded-[4px] px-[8px] py-[4px]" href="#home">Home</a>
+            <a class="menu-item border rounded-[4px] px-[8px] py-[4px]" href="#hero">Our Profile</a>
+            <a class="menu-item border rounded-[4px] px-[8px] py-[4px]" href="#portfolios">Portfolio</a>
+            <a class="menu-item border rounded-[4px] px-[8px] py-[4px]" href="#message-us">Message Us</a>
+        </nav>
+    </header>
+
+    <hr />
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Home Section -->
+        <section id="home" class="p-[100px]">
+            <div class="container">
+                <div class="content-1">
+                    <h1 class="font-bold">Hi <span id="welcome-speech"></span>, Welcome To Website</h1>
+                    <p>Ini adalah website latihan pertama</p>
+                </div>
+
+                <div class="hero">
+                <div class="hero-left">
+                    <h1 class="hero-name">Frontend Developer</h1>
+                        <p> Saya Raihan Syabana berusia 23 tahun, jurusan Computer Science di Universitas Bina Nusantara. Saya memiliki minat dalam UI/UX Design dan Frontend Development, dan  sedang aktif mengembangkan keahlian dibidang Data Science yang berfokus pada pemecahan masalah secara analitis</p>
+                    </p>
+                </div>
+
+                <div class="hero-right">
+                    <img src="images/Photo Raihan di Sleman.jpg" alt="myself" />
+                    <!-- <img alt="Profile Image" class="h-[500px] banner-img"> -->
+                </div>
+                </div>
+            </div>
+
+        </section>
+
+        <hr />
+
+        <!-- Portfolio Section -->
+
+        <section id="portfolios">
+        <div class="portfolios main-container">
+        <h3 class="pre-title">My Works</h3>
+        <h1 class="section-title">Portfolio</h1>
+
+        <div class="grid-2">
+          <!-- Portfolio 1 -->
+          <div class="portfolio">
+            <div class="portfolio-cover">
+              <img src="./images/danbam.jpg" alt="Portfolio 1"/>
+            </div>
+            <div class="portfolio-info">
+              <div class="portfolio-title">
+                <h4>Danbam Restaurant Website</h4>
+              </div>
+              <div class="portfolio-tags">
+                <div>HTML</div>
+                <div>CSS</div>
+              </div>
+              <p>
+                Danbam Restaurant merupakan website yang dibuat untuk
+                menampilkan informasi mengenai restoran, termasuk menu makanan dan minuman, lokasi, dan jam buka. Website ini dirancang dengan tampilan yang menarik dan responsif, sehingga dapat diakses dengan baik di berbagai perangkat.
+              </p>
+            </div>
+          </div>
+
+          <!-- Portfolio 2 -->
+          <div class="portfolio">
+            <div class="portfolio-cover">
+              <img
+                src="./images/Sepedaku.png"
+                alt="Portfolio 2"
+              />
+            </div>
+            <div class="portfolio-info">
+              <div class="portfolio-title">
+                <h4>Sepedaku Bike Shop</h4>
+                <a href="/" class="portfolio-link">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M6 17c2.269-9.881 11-11.667 11-11.667v-3.333l7 6.637-7 6.696v-3.333s-6.17-.171-11 5zm12 .145v2.855h-16v-12h6.598c.768-.787 1.561-1.449 2.339-2h-10.937v16h20v-6.769l-2 1.914z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="portfolio-tags">
+                <div>UI Design</div>
+                <div>Figma</div>
+              </div>
+              <p>
+                Sepedaku Bike Shop adalah website yang dibuat untuk menampilkan berbagai jenis sepeda yang tersedia di toko, termasuk spesifikasi, harga, dan gambar. Website ini dirancang dengan tampilan yang modern dan responsif, sehingga pengguna dapat dengan mudah menjelajahi produk yang ditawarkan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <hr />
+
+        <!-- Message Us Section -->
+        <section class="p-[100px]" id="message-us">
+            <h1 class="text-[24px] font-bold">Message Us</h1>
+            <p class="text-[16px]">Silakan hubungi kami jika ada pertanyaan atau permintaan informasi.</p>
+
+            <div class="message-content">
+                <div class="bagian-left">
+                <form id="messageForm">
+                    <div class="form-group">
+                        <label for="nama">Nama</label>
+                        <input type="text" id="nama" name="nama" placeholder="Nama">
+                    </div>
+                    <div class="form-group">
+                        <label for="tanggalLahir">Tanggal Lahir</label>
+                        <input type="date" id="tanggalLahir" name="tanggalLahir" value="2025-08-02">
+                    </div>
+                    <div class="form-group">
+                        <label>Jenis Kelamin</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="jenisKelamin" value="Laki-Laki" checked>Laki-Laki</label>
+                            <label><input type="radio" name="jenisKelamin" value="Perempuan">Perempuan</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pesan">Pesan</label>
+                        <textarea id="pesan" name="pesan" rows="4" placeholder="Tuliskan Pesan"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+                </div>
+
+                <div class="bagian-right">
+                <div class="output-box">
+                    <p id="currentTime">Current time : Sat Ags 02 2025 10:27:28 GMT+07</p>
+                    <hr>
+                    <p><b>Nama</b> : <span id="outputNama">Raihan Syabana</span></p>
+                    <p><b>Tanggal Lahir</b> : <span id="outputTanggalLahir">04/11/2001</span></p>
+                    <p><b>Jenis Kelamin</b> : <span id="outputJenisKelamin">Laki-Laki</span></p>
+                    <p><b>Pesan</b> : <span id="outputPesan">RevoU makin jaya jaya jaya</span></p>
+                </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <hr />
+
+    <!-- Footer Content -->
+    <footer class="text-center p-[20px] bg-[#e3df7d]">
+        <p>&copy; 2025 Portofolio Raihan Syabana. All rights reserved.</p>
+    </footer>
+
+    <!-- Javascript External -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
